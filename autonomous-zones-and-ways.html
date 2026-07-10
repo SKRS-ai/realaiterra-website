@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Zones & Ways (AVWs) — Terra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+
+        .avw-path {
+            animation: dash 8s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+    <!-- NAV -->
+    <nav class="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full bg-gradient-to-br from-teal-400 to-cyan-500 flex items-center justify-center text-xl font-bold">🌍</div>
+                <span class="heading-font text-2xl font-semibold tracking-tighter">TERRA</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-teal-400 transition-colors">Home</a>
+                <a href="the-world-of-terra.html" class="hover:text-teal-400 transition-colors">The World</a>
+                <a href="autonomous-zones-and-ways.html" class="text-teal-400">Autonomous Zones</a>
+                <a href="technology-and-visualization.html" class="hover:text-teal-400 transition-colors">Technology</a>
+                <a href="security-and-sovereignty.html" class="hover:text-teal-400 transition-colors">Security</a>
+                <a href="aether-guard.html" class="hover:text-teal-400 transition-colors">Aether Guard</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="join-realaid.html" class="px-6 py-2.5 bg-white text-zinc-900 rounded-full font-semibold hover:bg-teal-400 hover:text-white transition-all">
+                    Claim Identity
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="pt-24 pb-16 bg-gradient-to-b from-zinc-950 to-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="heading-font text-6xl md:text-7xl font-semibold tracking-tighter mb-6">
+                    Autonomous Zones &amp; Ways
+                </h1>
+                <p class="text-2xl text-teal-400">AVWs — The Dedicated Infrastructure for the Robot Age</p>
+            </div>
+
+            <!-- Visual -->
+            <div class="max-w-4xl mx-auto relative h-96 flex items-center justify-center">
+                <div class="relative w-full max-w-lg">
+                    <div class="border border-teal-400/30 rounded-3xl bg-zinc-900/70 p-8 backdrop-blur">
+                        <div class="h-80 border-2 border-dashed border-teal-400 rounded-2xl relative overflow-hidden">
+                            <!-- Highway simulation -->
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-teal-400/10 to-transparent"></div>
+                            <div class="absolute top-1/3 left-0 right-0 h-2 bg-teal-400/30"></div>
+                            <div class="absolute bottom-1/3 left-0 right-0 h-2 bg-teal-400/30"></div>
+                            
+                            <!-- Moving nodes -->
+                            <div class="absolute top-1/3 left-10 w-6 h-6 bg-teal-400 rounded-full flex items-center justify-center text-xs animate-[moveRight_4s_linear_infinite]">🤖</div>
+                            <div class="absolute bottom-1/3 left-32 w-5 h-5 bg-cyan-400 rounded-full flex items-center justify-center text-xs animate-[moveRight_3.2s_linear_infinite]">🚁</div>
+                            
+                            <div class="absolute inset-0 flex items-center justify-center text-xs font-mono tracking-widest text-teal-400/70">
+                                HIGH-SPEED AUTONOMOUS CORRIDOR
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-16">
+                <div class="md:col-span-7 space-y-12">
+                    <div>
+                        <h2 class="heading-font text-4xl font-semibold mb-6">What are Autonomous Zones & Ways (AVWs)?</h2>
+                        <p class="text-lg text-zinc-300 leading-relaxed">
+                            AVWs are purpose-built physical and digital infrastructure corridors designed exclusively for autonomous robots, drones, and vehicles. 
+                            They function as dedicated "robot highways" that operate separately from human traffic for maximum safety, efficiency, and performance.
+                        </p>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="text-5xl">🛣️</div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Physical Layer</h3>
+                                <p class="text-zinc-400">Embedded dedicated lanes, high-speed maglev-compatible tunnels, inductive charging networks, and seamless transition points between autonomous and mixed-use zones.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="text-5xl">🔐</div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Digital Sovereignty Layer</h3>
+                                <p class="text-zinc-400">Powered by RoboSign™ for robot identity and Bio-Sign™ for human/organization coupling. Every movement is verifiable and auditable.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="text-5xl">🛡️</div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Security & Protection</h3>
+                                <p class="text-zinc-400">Continuous monitoring against harmful frequencies, electronic interference, and threats. Protected environments ensure robots operate at peak performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-5">
+                    <div class="sticky top-28 bg-zinc-900 border border-teal-400/20 rounded-3xl p-8">
+                        <h3 class="text-teal-400 text-xl font-semibold mb-6">Key Benefits</h3>
+                        <ul class="space-y-6">
+                            <li class="flex gap-4">
+                                <span class="text-teal-400">01</span>
+                                <span>Safety through separation from human traffic</span>
+                            </li>
+                            <li class="flex gap-4">
+                                <span class="text-teal-400">02</span>
+                                <span>High-speed, uninterrupted autonomous operations</span>
+                            </li>
+                            <li class="flex gap-4">
+                                <span class="text-teal-400">03</span>
+                                <span>Protection from electromagnetic interference</span>
+                            </li>
+                            <li class="flex gap-4">
+                                <span class="text-teal-400">04</span>
+                                <span>Scalable foundation for the symbiotic future</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-20 bg-zinc-900 border-t border-b border-zinc-800">
+        <div class="max-w-3xl mx-auto text-center px-6">
+            <h2 class="heading-font text-5xl font-semibold mb-6">Build the Future of Autonomous Mobility</h2>
+            <p class="text-xl text-zinc-400 mb-10">
+                Terra’s Autonomous Zones & Ways provide the critical infrastructure needed for safe, efficient, and sovereign robot integration.
+            </p>
+            <a href="join-realaid.html" class="inline-flex items-center gap-3 px-10 py-5 bg-teal-400 text-zinc-900 rounded-3xl text-xl font-semibold hover:bg-teal-300 transition-all">
+                Join the Symbiotic Era
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black border-t border-zinc-800 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">
+            <p>&copy; 2026 Terra • REALAiiD Ecosystem • All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

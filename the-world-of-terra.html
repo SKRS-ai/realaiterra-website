@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World of Terra — Living Digital Twin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+
+        .globe-container {
+            animation: rotateGlobe 60s linear infinite;
+        }
+
+        @keyframes rotateGlobe {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(360deg); }
+        }
+
+        .pulse-node {
+            animation: nodePulse 3s ease-in-out infinite;
+        }
+
+        @keyframes nodePulse {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+    <!-- NAV -->
+    <nav class="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full bg-gradient-to-br from-teal-400 to-cyan-500 flex items-center justify-center text-xl font-bold">🌍</div>
+                <span class="heading-font text-2xl font-semibold tracking-tighter">TERRA</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-teal-400 transition-colors">Home</a>
+                <a href="the-world-of-terra.html" class="text-teal-400">The World</a>
+                <a href="autonomous-zones-and-ways.html" class="hover:text-teal-400 transition-colors">Autonomous Zones</a>
+                <a href="technology-and-visualization.html" class="hover:text-teal-400 transition-colors">Technology</a>
+                <a href="security-and-sovereignty.html" class="hover:text-teal-400 transition-colors">Security</a>
+                <a href="aether-guard.html" class="hover:text-teal-400 transition-colors">Aether Guard</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <a href="join-realaid.html" class="px-6 py-2.5 bg-white text-zinc-900 rounded-full font-semibold hover:bg-teal-400 hover:text-white transition-all">
+                    Claim Identity
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="pt-24 pb-16 bg-gradient-to-b from-zinc-950 to-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="heading-font text-6xl md:text-7xl font-semibold tracking-tighter mb-6">
+                    The World of <span class="text-teal-400">Terra</span>
+                </h1>
+                <p class="text-xl text-zinc-400 max-w-2xl mx-auto">
+                    A living, real-time Autonomy-Oriented Digital Twin of Earth — where the physical and digital converge.
+                </p>
+            </div>
+
+            <!-- Interactive Globe Visualization -->
+            <div class="relative mx-auto max-w-2xl mb-20">
+                <div class="aspect-square rounded-[4rem] border border-teal-400/30 bg-zinc-900/50 backdrop-blur-xl flex items-center justify-center overflow-hidden relative">
+                    <div class="globe-container w-96 h-96 rounded-full border-8 border-teal-400/40 relative shadow-2xl shadow-teal-500/30">
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-br from-teal-400/20 via-cyan-400/10 to-transparent flex items-center justify-center">
+                            <div class="text-[180px] opacity-80">🌍</div>
+                        </div>
+                        <!-- Pulsing Nodes -->
+                        <div class="absolute top-12 left-20 w-5 h-5 bg-teal-400 rounded-full pulse-node"></div>
+                        <div class="absolute top-32 right-16 w-4 h-4 bg-cyan-400 rounded-full pulse-node" style="animation-delay: 0.8s"></div>
+                        <div class="absolute bottom-20 left-28 w-6 h-6 bg-emerald-400 rounded-full pulse-node" style="animation-delay: 1.5s"></div>
+                        <div class="absolute bottom-32 right-32 w-5 h-5 bg-teal-400 rounded-full pulse-node" style="animation-delay: 2.2s"></div>
+                    </div>
+                    <div class="absolute -inset-8 border border-teal-400/20 rounded-[5rem] animate-[spin_80s_linear_infinite]"></div>
+                </div>
+                <div class="text-center text-xs tracking-widest text-teal-400 mt-4 font-mono">LIVE GRID-PULSE • REAL-TIME AUTONOMOUS NODES</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE EXPLANATION -->
+    <section class="py-20 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="heading-font text-5xl font-semibold tracking-tight mb-8">What is Terra?</h2>
+                    <div class="space-y-6 text-lg text-zinc-300">
+                        <p>
+                            Terra is the living digital twin of our physical Earth — a real-time, synchronized overlay that makes the invisible visible.
+                        </p>
+                        <p>
+                            It reveals electromagnetic frequencies, autonomous robots, drones, vehicles, sensors, and data flows that power modern civilization.
+                        </p>
+                        <p>
+                            Through Terra, Digital Humans (via REALAiiD) and autonomous machines meet in a shared, sovereign environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div class="bg-zinc-900 border border-teal-400/20 rounded-3xl p-8">
+                        <h3 class="text-teal-400 text-xl font-semibold mb-4">🌐 Real-Time Activity</h3>
+                        <p class="text-zinc-400">Walk any street in the physical world and see its digital counterpart — active nodes, frequency patterns, and autonomous traffic.</p>
+                    </div>
+                    <div class="bg-zinc-900 border border-teal-400/20 rounded-3xl p-8">
+                        <h3 class="text-teal-400 text-xl font-semibold mb-4">🔄 Autonomous Zones</h3>
+                        <p class="text-zinc-400">Dedicated high-speed corridors where robots operate freely and safely, protected from human traffic and harmful frequencies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY COMPONENTS -->
+    <section class="py-20 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="heading-font text-4xl font-semibold text-center mb-12">Core Components of Terra</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-950 border border-zinc-700 rounded-3xl p-8 hover:border-teal-400 transition-colors">
+                    <div class="text-5xl mb-6">📡</div>
+                    <h3 class="text-2xl font-semibold mb-3">Frequency Visualization</h3>
+                    <p class="text-zinc-400">See radio waves, radar, Wi-Fi, and electromagnetic signals rendered as dynamic overlays on the Grid-Pulse globe.</p>
+                </div>
+                <div class="bg-zinc-950 border border-zinc-700 rounded-3xl p-8 hover:border-teal-400 transition-colors">
+                    <div class="text-5xl mb-6">🤖</div>
+                    <h3 class="text-2xl font-semibold mb-3">Autonomous Nodes</h3>
+                    <p class="text-zinc-400">Live tracking of robots, drones, and vehicles operating in public and dedicated Autonomous Zones.</p>
+                </div>
+                <div class="bg-zinc-950 border border-zinc-700 rounded-3xl p-8 hover:border-teal-400 transition-colors">
+                    <div class="text-5xl mb-6">🛡️</div>
+                    <h3 class="text-2xl font-semibold mb-3">Sovereign Security</h3>
+                    <p class="text-zinc-400">Powered by RoboSign identity and Bio-Sign coupling — protected by Aether Guard oversight.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-24 text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="heading-font text-5xl font-semibold mb-6">Ready to Experience Terra?</h2>
+            <p class="text-zinc-400 text-xl mb-10">Claim your sovereign digital identity and step into the living digital twin of Earth.</p>
+            <a href="join-realaid.html" class="inline-flex items-center gap-3 px-10 py-5 bg-teal-400 text-zinc-900 rounded-3xl text-xl font-semibold hover:bg-teal-300 transition-all">
+                Begin Your Second Birth <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black border-t border-zinc-800 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">
+            <p>&copy; 2026 Terra • REALAiiD Ecosystem • All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
